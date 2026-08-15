@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Local databases & uploads
+backend/prisma/dev.db
+backend/prisma/dev.db-journal
+backend/uploads/certificates/
+backend/uploads/qr/
+backend/uploads/templates/
+backend/uploads/csv/
+
+# Environment Variables
+.env
+backend/.env
+frontend/.env
+
+# Build outputs & logs
+frontend/dist/
+*.log
+npm-debug.log*
+
+# IDE & System
+.DS_Store
+.vscode/
+.idea/
