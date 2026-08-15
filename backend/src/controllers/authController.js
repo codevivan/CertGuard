@@ -49,7 +49,7 @@ export const register = async (req, res) => {
     });
   } catch (error) {
     console.error('Register Error:', error);
-    res.status(500).json({ error: 'Failed to register user.' });
+    res.status(500).json({ error: error.message || 'Failed to register user.' });
   }
 };
 
@@ -89,7 +89,7 @@ export const login = async (req, res) => {
     });
   } catch (error) {
     console.error('Login Error:', error);
-    res.status(500).json({ error: 'Failed to authenticate user.' });
+    res.status(500).json({ error: error.message || 'Failed to authenticate user.' });
   }
 };
 
